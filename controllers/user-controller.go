@@ -224,7 +224,7 @@ func DeleteUser(w http.ResponseWriter, r *http.Request) {
 	}
 
 	if err := user.Delete(models.DB); err != nil {
-		utils.Respond(w, http.StatusInternalServerError, "Test")
+		utils.Respond(w, http.StatusInternalServerError, err.Error())
 		return
 	}
 
