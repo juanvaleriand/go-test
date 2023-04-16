@@ -244,6 +244,7 @@ Response:
 ### Delete User
 Method: `DELETE` \
 Endpoint: `{{base_url}}/api/v1/user/:id`\
+Authorization: `3cdcnTiBsl`\
 Response:
 ```json
 {
